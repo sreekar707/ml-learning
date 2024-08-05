@@ -62,6 +62,6 @@ def update_item(item_id):
 def delete_item(item_id):
     global items
     items=[item for item in items if item ["id"] != item_id]
-    return jsonify ({"results: item deleted"})
+    return jsonify ({"results": "item deleted"})
 if(__name__=="__main__"):
     app.run(debug=True)
